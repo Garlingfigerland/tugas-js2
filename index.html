@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input</title>
+<style>
+    body{
+    background-color:rgb(4, 132, 231);
+    
+}
+    .container{
+    width: 100%;
+    display: flex;
+    background-color:rgb(9, 83, 244);
+    border-radius:20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    align-items: center;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+
+    }
+    button{
+        background-color:rgb(4, 132, 231);
+        color:lightgrey;
+        border-radius: 25px;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <label>Nama :<br> <input id='input' type="text" name="nama"></label>
+            <label>Npm : <br><input id='nomor' type="text" name="no"></label>
+            <label>Nilai : <br> <input id='nilai' type="number" name="nilai" value="" min="0"></label>
+            <button>submit</button>
+            <button onclick="clearField()">reset</button>
+           
+        </div>
+    </div>
+
+    <script src="java.js"> </script>
+    <script>
+                function clearField()
+        {
+            document.getElementById('input').value='';
+            document.getElementById('nomor').value='';
+            document.getElementById('nilai').value='';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+body{
+    background-color:springgreen;
+    text-align: center;
+}
+    .container{
+width: 100%;
+display: flex;
+background-color:mediumspringgreen;
+border-radius:20px;
+align:center;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
